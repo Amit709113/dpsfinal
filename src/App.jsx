@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css'
 import { BrowserRouter, Route,Routes,  } from 'react-router-dom';
 
+// this is only for backend
+
 import SharedLayout from './router/SharedLayout'
 import Home from './router/Home'
 import About from './router/About'
@@ -149,9 +151,6 @@ function App() {
                 </Route>
               </Route>
             </Route>
-
-            
-           
           </Route>
         </Routes>
         {showFooter ?<Footer />:null}

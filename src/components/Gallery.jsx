@@ -5,12 +5,13 @@ import './Gallery.css'
 
 const Gallery = ({galleryData}) => {
 
-    const [list,setList]=useState([galleryData]);
-    const [imageList,setImageList]=useState([]);
-    const [categoryList,setCategoryList]=useState([]);
+    const [list,setList]=useState(galleryData);
+    const [imageList,setImageList]=useState(galleryData);
+    const [categoryList,setCategoryList]=useState([{categoryId:"1",categoryName:"_2023"},{categoryId:"2",categoryName:"before_2022"},{categoryId:"3",categoryName:"others"}]);
     
     useEffect(()=>{
         setImageList(list);
+        
     },[list]);
 
     const [model,setModel] =useState(false);
@@ -24,13 +25,14 @@ const Gallery = ({galleryData}) => {
             });
         setModel(true);
         }
-    const filterItem = (categId)=>{
-        gelleryGetByCategory(categId).then((resp)=>{
-            setImageList(resp);
-        }).catch((error)=>{
-            console.log("error occured",error);
+
+    const filterItem = (categName)=>{
+        const newList=list.filter((item,idx)=>{
+            return item.categoryName==categName
         })
         
+           setImageList(newList);
+           
     }
 
   return (
@@ -47,10 +49,9 @@ const Gallery = ({galleryData}) => {
             <h1 className='heading'>Gallery</h1>
             <div className='gallery-category-section'>
                 <button onClick={()=>setImageList(list)} >All</button>
-
                 {
                     categoryList.map((category,idx)=>{
-                        return <button onClick={()=>filterItem(category.categoryId)} key={idx}>{category.categoryName}</button>
+                        return <button onClick={()=>filterItem(category.categoryName)} key={idx}>{category.categoryName}</button>
                 
                     })
                 }
@@ -58,9 +59,11 @@ const Gallery = ({galleryData}) => {
             
             <div className="gallery-main">
                 {
+                    
                     imageList.map((image,idx)=>{
                         const {galleryLink:link,galleryCaption:caption,galleryAlt:alt}=image;
                         return (<div className='pics' key={idx} onClick={()=>getImg({link,caption})}>
+                                
                                     <img  src={link} alt={alt} className='gallery-image' loading='lazy' />
                                 </div>)
                     })
