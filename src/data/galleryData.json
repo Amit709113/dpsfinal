@@ -94,6 +94,42 @@
             "galleryLink":"http://drive.google.com/uc?export=view&id=1TupAJ5P4n_lVRTlVAq_bNN06fxXeRCJN",
            "galleryAlt":"gallery-image",
             "gallertCaption":"Teacher's day 2022"
+        },
+        {
+            "id":"14",
+            "categoryName":"republic_day_2022",
+            "galleryLink":"http://drive.google.com/uc?export=view&id=1a7ye5r79bxAEjFEfIX5KEGvOZmjhxWaU",
+           "galleryAlt":"",
+            "gallertCaption":""
+        },
+        {
+            "id":"15",
+            "categoryName":"republic_day_2022",
+            "galleryLink":"http://drive.google.com/uc?export=view&id=1GJGLMdRbQYQuDCNAcSSISFzCmlZKCGNG",
+            "galleryAlt":"indep1.jpg",
+            "gallertCaption":"independance day 2023"
+        },
+        {
+            "id":"16",
+            "categoryName":"republic_day_2022",
+            "galleryLink":"http://drive.google.com/uc?export=view&id=10VKDrsZQQOESrKmfw5RzUc7qTR5kR2HO",
+           "galleryAlt":"indep2",
+            "gallertCaption":"independance day 2023"
+        },
+        {
+            "id":"17",
+            "categoryName":"republic_day_2022",
+            "galleryLink":"http://drive.google.com/uc?export=view&id=1x-B-wQUzXF6SmLBvISi2FNSnyrqiA7Jk",
+            
+           "galleryAlt":"assembly 4",
+            "gallertCaption":""
+        },
+        {
+            "id":"18",
+            "categoryName":"republic_day_2022",
+            "galleryLink":"http://drive.google.com/uc?export=view&id=1a7ye5r79bxAEjFEfIX5KEGvOZmjhxWaU",
+           "galleryAlt":"assembly 5",
+            "gallertCaption":""
         }
     ]
 }
