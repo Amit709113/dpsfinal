@@ -16,13 +16,14 @@ const Gallery = ({galleryData}) => {
 
     const [model,setModel] =useState(false);
     const[tempImg,setTempImg]=useState('');
-        const getImg=({imgSrc,caption})=>{
+        const getImg=({link,caption})=>{
             setTempImg(()=>{
                 return ({
-                    imgSrc:imgSrc,
+                    imgSrc:link,
                     caption:caption
                 })
             });
+            
         setModel(true);
         }
 
