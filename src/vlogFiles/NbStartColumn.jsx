@@ -19,7 +19,7 @@ const NbStartColumn = () => {
                                     <ul className="left-nav">
                                         <li>
                                             <NavLink to={'/notice'}> <FaGreaterThan />New Notice</NavLink>
-                                            {/* to should be updated */}
+                                            
                                         </li>
                                         <li>
                                             <NavLink to={'/'}> <FaGreaterThan />Home </NavLink>

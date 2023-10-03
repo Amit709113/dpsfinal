@@ -68,9 +68,9 @@ return (
                                 <li>
                                     <NavLink to={'/sports-teakwondo'}><FaGreaterThan style={{paddingTop:'4px' , marginTop:'3px' ,marginRight:"6px"}} />Learning and Assignment Projects</NavLink>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <NavLink to={'/user/dashboard/'}><FaGreaterThan style={{paddingTop:'4px' , marginTop:'3px' ,marginRight:"6px"}} />School login</NavLink>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
